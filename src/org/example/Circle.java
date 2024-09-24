@@ -14,12 +14,12 @@ public class Circle extends Shape implements IAreaCalculable, IPerimeterCalculab
     }
 
     @Override
-    public float getArea() {
+    public double getArea() {
         return (float)Math.PI * _radius * _radius;
     }
 
     @Override
-    public float getPerimeter(){
+    public double getPerimeter(){
         return (float)(2 * Math.PI * _radius);
     }
 }

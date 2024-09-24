@@ -13,7 +13,7 @@ public class Line extends Shape implements IPerimeterCalculable {
     }
 
     @Override
-    public float getPerimeter() {
+    public double getPerimeter() {
         return _width;
     }
 }

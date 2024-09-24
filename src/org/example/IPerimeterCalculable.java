@@ -1,5 +1,5 @@
 package org.example;
 
 public interface IPerimeterCalculable {
-    float getPerimeter();
+    double getPerimeter();
 }

@@ -16,12 +16,14 @@ public class Rectangle extends Shape implements IAreaCalculable, IPerimeterCalcu
     }
 
     @Override
-    public float getArea() {
+    public double getArea() {
         return _width * _height;
     }
 
     @Override
-    public float getPerimeter() {
+    public double getPerimeter() {
         return 2 * _width + _height;
     }
 }
+
+

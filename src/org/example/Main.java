@@ -1,9 +1,9 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
+
     public static void main(String[] args) {
 
         var areas = new HashMap<ShapeType, Double>();
@@ -12,7 +12,7 @@ public class Main {
 
         var rectangle = new Rectangle(4, 5);
         var circle = new Circle(3.4f);
-        var triangle = new Triangle(3, 5, 7, 6);
+        var triangle = new Triangle(3, 5, 7);
 
         areas.put(ShapeType.RECTANGLE, (double)rectangle.getArea());
         areas.put(ShapeType.CIRCLE, (double)circle.getArea());
@@ -29,7 +29,6 @@ public class Main {
 
         printShapeInfo(rectangle);
         printShapeInfo(circle);
-
     }
 
     private static <T extends Shape & IAreaCalculable & IPerimeterCalculable>
