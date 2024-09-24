@@ -1,10 +1,10 @@
 package org.example;
 
 public class Triangle extends Shape implements IAreaCalculable, IPerimeterCalculable {
-    private double _sideA;
-    private double _sideB;
-    private double _sideC;
-    private double _height;
+    private final double _sideA;
+    private final double _sideB;
+    private final double _sideC;
+    private final double _height;
 
     public Triangle(double a, double b, double c, double height) {
         super(ShapeType.TRIANGLE);
